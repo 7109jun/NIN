@@ -1,0 +1,11 @@
+[package]
+name = "nin-ast"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+nin-diag = { workspace = true }
+nin-syntax = { workspace = true }
+nin-schema = { workspace = true }

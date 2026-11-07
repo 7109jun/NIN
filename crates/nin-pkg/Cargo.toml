@@ -1,0 +1,11 @@
+[package]
+name = "nin-pkg"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+toml = { workspace = true }
+semver = { workspace = true }
+miniz_oxide = { workspace = true }

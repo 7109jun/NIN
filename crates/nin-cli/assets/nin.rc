@@ -1,0 +1,22 @@
+1 ICON "nin.ico"
+2 ICON "nin-doc.ico"
+1 24 "nin.manifest"
+1 VERSIONINFO
+FILEVERSION 0,1,0,0
+PRODUCTVERSION 0,1,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "ProductName", "NIN Shell"
+      VALUE "FileDescription", "NIN Shell"
+      VALUE "FileVersion", "0.1.0"
+      VALUE "OriginalFilename", "nin.exe"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END

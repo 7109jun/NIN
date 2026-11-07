@@ -1,0 +1,18 @@
+[package]
+name = "nin-plugin"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = ["host"]
+host = ["dep:libloading"]
+
+[dependencies]
+libloading = { workspace = true, optional = true }
+serde_json = { workspace = true }
+
+[[example]]
+name = "probe"
+required-features = ["host"]

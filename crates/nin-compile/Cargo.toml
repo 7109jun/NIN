@@ -1,0 +1,13 @@
+[package]
+name = "nin-compile"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+nin-ast = { workspace = true }
+nin-runtime = { workspace = true }
+nin-pkg = { workspace = true }
+miniz_oxide = { workspace = true }
+serde_json = { workspace = true }

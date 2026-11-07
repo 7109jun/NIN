@@ -1,0 +1,8 @@
+{
+  // hello world
+  "nin": "1",
+  "main": [
+    {"let": "xs", "value": "[1,2,3].map(x => x * 2)"},
+    {"print": "hello ${xs}"}
+  ]
+}

@@ -1,0 +1,44 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "plugins/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.84"
+license = "MIT"
+authors = ["NIN Shell contributors"]
+
+[workspace.dependencies]
+toml = "0.8"
+semver = "1"
+miniz_oxide = "0.8"
+libloading = "0.8"
+serde_json = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+regex = { version = "1", default-features = false, features = ["std", "unicode-perl", "unicode-case", "perf"] }
+indexmap = "2"
+yaml-rust2 = "0.10"
+windows-sys = "0.59"
+
+# internal crates
+nin-diag = { path = "crates/nin-diag" }
+nin-syntax = { path = "crates/nin-syntax" }
+nin-ast = { path = "crates/nin-ast" }
+nin-schema = { path = "crates/nin-schema" }
+nin-types = { path = "crates/nin-types" }
+nin-sema = { path = "crates/nin-sema" }
+nin-runtime = { path = "crates/nin-runtime" }
+nin-std = { path = "crates/nin-std" }
+nin-workflow = { path = "crates/nin-workflow" }
+nin-win = { path = "crates/nin-win" }
+nin-sched = { path = "crates/nin-sched" }
+nin-pkg = { path = "crates/nin-pkg" }
+nin-plugin = { path = "crates/nin-plugin", default-features = false }
+nin-compile = { path = "crates/nin-compile" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+strip = true

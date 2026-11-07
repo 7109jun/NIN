@@ -1,0 +1,10 @@
+[package]
+name = "nin-types"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+nin-ast = { workspace = true }
+nin-diag = { workspace = true }

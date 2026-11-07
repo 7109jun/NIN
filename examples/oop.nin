@@ -1,0 +1,19 @@
+{
+  "nin": "1",
+  "interfaces": {"Shape": {"methods": {"area": {"returns": "float"}}}},
+  "classes": {
+    "Base": {"abstract": true, "implements": ["Shape"],
+      "fields": {"name": "string"},
+      "constructors": [{"params": ["name: string"], "body": [{"set": "this.name", "value": "${name}"}]}],
+      "methods": {"area": {"abstract": true, "returns": "float"},
+                  "describe": {"returns": "string", "body": [{"return": "${this.name}: ${this.area()}"}]}}},
+    "Circle": {"extends": "Base",
+      "fields": {"r": "float"},
+      "constructors": [{"params": ["r: float"], "body": [{"super": ["circle"]}, {"set": "this.r", "value": "${r}"}]}],
+      "methods": {"area": {"override": true, "returns": "float", "body": [{"return": "${3.0 * this.r * this.r}"}]}}}
+  },
+  "main": [
+    {"let": "c", "value": "${new Circle(2.0)}"},
+    {"print": "${c.describe()}"}
+  ]
+}

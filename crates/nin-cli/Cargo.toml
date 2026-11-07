@@ -1,0 +1,27 @@
+[package]
+name = "nin-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "nin"
+path = "src/main.rs"
+
+[dependencies]
+nin-diag = { workspace = true }
+nin-syntax = { workspace = true }
+nin-ast = { workspace = true }
+nin-sema = { workspace = true }
+nin-runtime = { workspace = true }
+nin-std = { workspace = true }
+nin-workflow = { workspace = true }
+nin-win = { workspace = true }
+nin-sched = { workspace = true }
+nin-pkg = { workspace = true }
+nin-compile = { workspace = true }
+nin-plugin = { workspace = true, features = ["host"] }
+serde_json = { workspace = true }
+toml = { workspace = true }
+chrono = { workspace = true }

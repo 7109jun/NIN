@@ -1,0 +1,16 @@
+[package]
+name = "nin-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+nin-diag = { workspace = true }
+nin-syntax = { workspace = true }
+nin-ast = { workspace = true }
+nin-win = { workspace = true }
+nin-pkg = { workspace = true }
+nin-plugin = { workspace = true, features = ["host"] }
+serde_json = { workspace = true }
+indexmap = { workspace = true }

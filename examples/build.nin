@@ -1,0 +1,11 @@
+{
+  "nin": "1",
+  "workflow": {
+    "name": "build-demo",
+    "jobs": {
+      "lint":  {"steps": [{"run": "cmd", "args": ["/c", "echo", "lint ok"]}]},
+      "test":  {"strategy": {"matrix": {"os": ["a", "b"]}}, "steps": [{"script": [{"print": "test ${matrix.os}"}]}]},
+      "pack":  {"needs": ["lint", "test"], "steps": [{"script": [{"print": "packing"}]}]}
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[package]
+name = "nin-workflow"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+nin-diag = { workspace = true }
+nin-ast = { workspace = true }
+nin-runtime = { workspace = true }
+nin-win = { workspace = true }
+serde_json = { workspace = true }
+indexmap = { workspace = true }
+
+[dev-dependencies]
+nin-std = { workspace = true }

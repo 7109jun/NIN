@@ -1,0 +1,13 @@
+[package]
+name = "nin-hello"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+nin-plugin = { workspace = true }
+serde_json = { workspace = true }

@@ -1,0 +1,18 @@
+[package]
+name = "nin-std"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+nin-runtime = { workspace = true }
+nin-win = { workspace = true }
+nin-pkg = { workspace = true }
+nin-ast = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
+regex = { workspace = true }
+chrono = { workspace = true }
+indexmap = { workspace = true }
+yaml-rust2 = { workspace = true }
