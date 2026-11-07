@@ -10,4 +10,4 @@ Documentation
 ## Build
 
 Linux → Windows x64 cross-build (see `scripts/env.sh` for the toolchain notes): `scripts/build-win.sh -p nin-cli`.
-Host tests: `cargo test --workspace`. Prebuilt `nin.exe`: see the GitHub Releases page. Spec: [docs/SPEC.md](docs/SPEC.md).
+Host tests: `cargo test --workspace`. Prebuilt `nin.exe` (Windows x64, cross-built, Wine-tested only): [bin/nin.exe](bin/nin.exe), SHA-256 `2bc96e19432896020d95822c82c736a7fba1a6667c4e7454500f302719d1fd8b`. Spec: [docs/SPEC.md](docs/SPEC.md).
